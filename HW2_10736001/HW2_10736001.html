@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Yatimisi的表單申請</title>
+    <meta charset='utf-8'></meta>
+  </head>
+  <body>
+    <form action='HW2-1_10736001.html' method='POST'>
+      <fieldset>
+        <h1>會員申請表單，請填寫以下資料</h1>
+      </fieldset>
+      
+      <p>
+        <label for='usename'><span style='color: #FF0000;'>* </span>姓名: </label>
+        <input type='text' name='username' id='username' value='' required>
+      </p>
+      
+      <p>
+        <label for='enusername'><span style='color: #FF0000;'>* </span>英文姓名: </label>
+        <input type='text' name='enusername' id='enusername' value='' required>
+      </p>
+      
+      <p>
+        <label>性別: </label>
+        
+        <input type='radio' name='gender' id='man' value='man'>
+        <label for='man'>男性</label>
+        
+        <input type='radio' name='gender' id='woman' value='woman'>
+        <label for='woman'>女性</label>
+        
+        <input type='radio' name='gender' id='other' value='other' required>
+        <label for='other'>其他</label>
+      </p>
+      
+      <p>
+        <label for='birthday'><span style='color: #FF0000;'>* </span>生日: </label>
+        <input type='date' name='birthday' id='birthday' required>
+      </p>
+      
+      <p>
+        <label for='tel'><span style='color: #FF0000;'>* </span>手機號碼: </label>
+        <input type='tel' name='tel' id='tel' required>
+      </p>
+      
+      <p>
+        <label for='email'><span style='color: #FF0000;'>* </span>電子郵件: </label>
+        <input type='email' name='email' id='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required>
+      </p>
+      
+      <p>
+        <label for='fburl'><span style='color: #FF0000;'>* </span>FB網址: </label>
+        <input type='url' name='fburl' id='fburl' required>
+      </p>
+      
+      <p>
+        <label for='likecolor'><span style='color: #FF0000;'>* </span>喜歡的顏色: </label>
+        <input type='color' name='likecolor' id='likecolor' required>
+      </p>
+      
+      <p>
+        <label for='unlikecolor'><span style='color: #FF0000;'>* </span>討厭的顏色: </label>
+        <input type='color' name='unlikecolor' id='unlikecolor' required>
+      </p>
+      
+      <p>
+        <label for='address'><span style='color: #FF0000;'>* </span>居住地: </label>
+        <select name='address' id='address' required>
+          <option value='' selected>請選擇</option>
+          <option value='臺北'>臺北</option>
+          <option value='桃園'>桃園</option>
+          <option value='南部'>南部</option>
+        </select>
+      </p>
+      
+      <p>
+        <label for='goCompany'>通勤方式: </label>
+        
+        <input type='checkbox' name='goCompany' id='swim' value='游泳'>
+        <label for='swim'>游泳</label>
+        
+        <input type='checkbox' name='goCompany' id='parachute' value='跳傘'>
+        <label for='parachute'>跳傘</label>
+        
+        <input type='checkbox' name='goCompany' id='slippery' value='溜滑梯'>
+        <label for='slippery'>溜滑梯</label>
+      
+      </p>
+      
+      <fieldset>
+        <legend>請設定您的帳號密碼: </legend>
+        <p>
+          <label for='account'><span style='color: #FF0000;'>* </span>帳號: </label>
+          <input type='text' name='account' id='account' value='' required>
+        </p>
+        <p>
+          <label for='password'><span style='color: #FF0000;'>* </span>密碼: </label>
+          <input type='password' name='password' id='password' value='' required>
+        </p>
+        <p>
+          <label for='password_confirm'><span style='color: #FF0000;'>* </span>密碼確認: </label>
+          <input type='password' name='password_confirm' id='password_confirm' value='' required>
+        </p>
+      </fieldset>
+      
+      <p>
+        <input type='submit' value='send'>
+        <input type='reset' value='reset'>
+      </p>
+    </form>
+  </body>
+</html>
